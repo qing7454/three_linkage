@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>下拉选择联动</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/assets/css/index.css}" />
+    <script th:src="@{/assets/js/jquery-2.2.4.js}" type = "text/javascript"></script>
+    <script th:src="@{/assets/js/select.js}" type = "text/javascript"></script>
+</head>
+<body>
+    <div class="cascade-box">
+        <span class="addon">范围</span>
+        <input class="text" readonly placeholder="请选择范围">
+        <input type="hidden" name="area">
+        <div class="selector" style="display: none;">
+            <dl class="province">
+                <dt>选择省</dt>
+                <dd></dd>
+            </dl>
+            <dl class="city">
+                <dt>选择市</dt>
+                <dd>
+                    <ul class="letter-group"></ul>
+                    <ul class="data-group"></ul>
+                </dd>
+            </dl>
+            <dl class="area">
+                <dt>选择区</dt>
+                <dd>
+                    <ul class="letter-group"></ul>
+                    <ul class="data-group"></ul>
+                </dd>
+            </dl>
+        </div>
+    </div>
+</body>
+</html>
